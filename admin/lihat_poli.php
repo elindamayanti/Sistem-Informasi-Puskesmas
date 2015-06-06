@@ -1,7 +1,7 @@
 <?php
 include "../include/connect.php"; //sambung ke database
 
-//mengambil data dari tabel suster
+//mengambil data dari tabel poli
 $sql = mysql_query("SELECT * FROM poli_lab ORDER BY kode_poli");
 if (!$sql) { // add this check.
     die('Invalid query: ' . mysql_error());
