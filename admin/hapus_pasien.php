@@ -9,7 +9,7 @@ $hasil = mysql_query("DELETE FROM pasien WHERE kode_pasien = '$kode_pasien'");
 $hasil2 = mysql_query("DELETE FROM tgl_masuk WHERE kode_pasien = '$kode_pasien'");
 
 //menghapus record di tabel ruangan
-$hasil3 = mysql_query("call DELETE_PASIEN ('$kode_pasien')");
+$hasil3 = mysql_query("DELETE FROM pasien WHERE kode_pasien ='$kode_pasien'");
 
 if ($hasil && $hasil2 && $hasil3){
 //echo "sukses";
