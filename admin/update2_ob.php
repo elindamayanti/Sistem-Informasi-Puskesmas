@@ -7,7 +7,7 @@ $nama_obat = $_POST['nama_obat'];
 $jenis_obat = $_POST['jenis_obat'];
 $stok = $_POST['stok'];
 
-//query untuk mengupdate data tabel cleaning service
+//query untuk mengupdate data tabel obat
 $update = mysql_query("UPDATE obat SET  nama_obat='$nama_obat', jenis_obat='$jenis_obat', stok='$stok' WHERE kode_obat='$kodeobat'");
 
 if ($update) {
