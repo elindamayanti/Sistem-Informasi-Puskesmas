@@ -1,7 +1,7 @@
 <?php
 include "../include/connect.php";//sambungkan ke mysql
 
-//query untuk mengambil data dari tabel cleaning service
+//query untuk mengambil data dari tabel obat
 $query = mysql_query("SELECT MAX(kode_obat) AS kode_obat FROM obat");
 $ob = mysql_fetch_array($query);
 $kode_ob = $ob['kode_obat']+1;//ditambah 1 agar jadi kode_obat baru
