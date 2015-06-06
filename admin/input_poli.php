@@ -4,7 +4,7 @@ include "../include/connect.php";//sambung ke mysql
 //mengambil nama-nama dokter dari tabel dokter
 $hasil = mysql_query("SELECT nama_dokter FROM dokter");
 
-//menambil nilai maks dari tabel suster
+//menambil nilai maks dari tabel poli
 $query = mysql_query("SELECT MAX(kode_poli) AS kode_poli FROM poli_lab");
 $kodepoli = mysql_fetch_array($query);
 $kode_poli = $kodepoli['kode_poli']+1;
