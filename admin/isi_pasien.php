@@ -35,7 +35,7 @@ $kode_maks = mysql_fetch_array($kode_masuk_maks);//memecah hasil kedalam array
 $kode_masuk = $kode_maks['maks']+1;//kode masuk maks ditambah 1 agar menjadi kode masuk baru
 
 //query untuk memasukkan data ke dalam tabel pasien
-$hasil = mysql_query("call insert_pasien('$kode_pasien', '$nama_pasien', '$tgl_lahir', '$tempat_lahir', '$jenis_kelamin', '$alamat', '$usia', '$jenis_pasien', '$penyakit')");
+$hasil = mysql_query("INSERT INTO pasien VALUES('$kode_pasien', '$nama_pasien', '$tgl_lahir', '$tempat_lahir', '$jenis_kelamin', '$alamat', '$usia', '$jenis_pasien', '$penyakit')");
 
 //query untuk memasukkan data ke dalam tabel tgl_masuk
 $hasil2 = mysql_query("INSERT INTO tgl_masuk VALUES('$kode_masuk','$kode_pasien','$kode_dokter','$ruangan','$tgl_masuk')");
