@@ -4,7 +4,7 @@ include "../include/connect.php";//sambungkan ke mysql
 $kodeobat = $_GET['kodeob'];//mengambil nilai kode dari address bar
 
 
-//query untuk mengambil data dari tabel cleaning service
+//query untuk mengambil data dari tabel obat
 $query = mysql_query("SELECT * FROM obat WHERE kode_obat = '$kodeobat'");
 $ob = mysql_fetch_array($query);
 ?>
