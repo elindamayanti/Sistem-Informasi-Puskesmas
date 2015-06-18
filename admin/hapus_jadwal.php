@@ -1,7 +1,7 @@
 <?php
 include "../include/connect.php";//sambung ke mysql
 
-$kode_jaga = $_GET['kode'];//mengambil nilai kode dari address bar
+$kode_jaga = $_GET['kode'];//mengambil nilai kode dari addres
 
 //query menghapus data dari tabel jadwal_jaga
 $del = mysql_query("DELETE FROM jadwal_jaga WHERE kode_jaga = '$kode_jaga'");
