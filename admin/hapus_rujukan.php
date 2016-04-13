@@ -3,7 +3,7 @@ include "../include/connect.php";//sambungkan ke mysql
 
 $koderujukan = $_GET['koderj'];
 
-$hapus = mysql_query("DELETE FROM rujukan WHERE kode_rujukan = '$koderujukan'");
+$hapus = mysql_query("DELETE FROM rujukan WHERE kode_rujukan = '$koderujukan'");//Query untuk menghapus kode_rujukan
 
 if ($hapus){
 //echo "Sukses Hapus";
